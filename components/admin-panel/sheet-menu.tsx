@@ -28,7 +28,7 @@ export function SheetMenu() {
           >
             <Link href="/dashboard" className="flex items-center gap-2">
               <MenuIcon className="mr-1 size-6" />
-              <SheetTitle className="text-lg font-bold">Brand</SheetTitle>
+              <SheetTitle className="text-lg font-bold">NPMS</SheetTitle>
             </Link>
           </Button>
         </SheetHeader>
