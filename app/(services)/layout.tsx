@@ -8,19 +8,15 @@ interface RootLayoutProps {
 export default function ServicesLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html lang="en" >
+      <html lang="en">
         <head />
-        <body
-        >
-  
-            <div className="relative flex min-h-screen flex-col">
-              {/* <SiteHeader /> */}
-              <AdminPanelLayout>
-                <div className="flex-1">{children}</div>
-              </AdminPanelLayout>
-            </div>
-          
-          
+        <body>
+          <div className="relative flex min-h-screen flex-col">
+            {/* <SiteHeader /> */}
+            <AdminPanelLayout>
+              <div className="flex-1">{children}</div>
+            </AdminPanelLayout>
+          </div>
         </body>
       </html>
     </>

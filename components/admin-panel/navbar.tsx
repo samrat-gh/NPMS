@@ -1,10 +1,11 @@
-import { ModeToggle } from "@/components/mode-toggle";
-import { UserNav } from "@/components/admin-panel/user-nav";
-import { SheetMenu } from "@/components/admin-panel/sheet-menu";
-import { Activity } from "lucide-react";
+import { Activity } from "lucide-react"
+
+import { SheetMenu } from "@/components/admin-panel/sheet-menu"
+import { UserNav } from "@/components/admin-panel/user-nav"
+import { ModeToggle } from "@/components/mode-toggle"
 
 interface NavbarProps {
-  title: string;
+  title: string
 }
 
 export function Navbar({ title }: NavbarProps) {
@@ -13,11 +14,10 @@ export function Navbar({ title }: NavbarProps) {
       <div className="mx-4 flex h-14 items-center sm:mx-8">
         <div className="flex items-center space-x-4 lg:space-x-0">
           <SheetMenu />
-          
+
           {/* Logo */}
           <Activity className="mr-3 inline text-green-600" />
           <h1 className="px-2 font-bold">{title}</h1>
-          
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <ModeToggle />
@@ -25,5 +25,5 @@ export function Navbar({ title }: NavbarProps) {
         </div>
       </div>
     </header>
-  );
+  )
 }

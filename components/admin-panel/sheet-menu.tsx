@@ -1,15 +1,15 @@
-import Link from "next/link";
-import { MenuIcon } from "lucide-react";
+import Link from "next/link"
+import { MenuIcon } from "lucide-react"
 
-import { Button } from "@/components/ui/button";
-import { Menu } from "@/components/admin-panel/menu";
+import { Button } from "@/components/ui/button"
 import {
   Sheet,
-  SheetHeader,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
-  SheetTitle
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
+import { Menu } from "@/components/admin-panel/menu"
 
 export function SheetMenu() {
   return (
@@ -35,5 +35,5 @@ export function SheetMenu() {
         <Menu isOpen />
       </SheetContent>
     </Sheet>
-  );
+  )
 }

@@ -27,7 +27,6 @@
     "lucide-react": "0.105.0-alpha.4",
     "next": "14.0.2",
     "next-themes": "^0.2.1",
-    "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.2.0",

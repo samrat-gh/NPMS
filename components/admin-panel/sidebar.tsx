@@ -31,7 +31,7 @@ export function Sidebar() {
           asChild
         >
           <Link href="/dashboard" className="flex items-center gap-2">
-          <Activity className="mr-1 size-6 text-green-600"/>
+            <Activity className="mr-1 size-6 text-green-600" />
             <h1
               className={cn(
                 "whitespace-nowrap text-lg font-bold transition-[transform,opacity,display] duration-300 ease-in-out",

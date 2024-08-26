@@ -1,20 +1,21 @@
 // components/TopicGraph.tsx
 
-"use client";
-import dynamic from "next/dynamic";
-import { ApexOptions } from "apexcharts";
-import React from "react";
+"use client"
+
+import React from "react"
+import dynamic from "next/dynamic"
+import { ApexOptions } from "apexcharts"
 
 // Dynamically import ApexCharts with SSR disabled for Next.js compatibility
-const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
+const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false })
 
 // Define the props interface for type safety and IntelliSense in TypeScript
 interface TopicGraphProps {
   series: {
-    name: string;
-    data: number[];
-  }[];
-  categories: string[];
+    name: string
+    data: number[]
+  }[]
+  categories: string[]
 }
 
 // Functional component for the Topic Graph using TypeScript
@@ -47,7 +48,7 @@ const TopicGraph: React.FC<TopicGraphProps> = ({ series, categories }) => {
         format: "dd/MM/yy HH:mm", // Set the format for the tooltip's x-value
       },
     },
-  };
+  }
 
   // Render the ApexChart component with the provided options and series
   return (
@@ -56,7 +57,7 @@ const TopicGraph: React.FC<TopicGraphProps> = ({ series, categories }) => {
         <ApexChart options={options} series={series} type="line" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopicGraph;
+export default TopicGraph
