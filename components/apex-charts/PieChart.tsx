@@ -37,7 +37,7 @@ const PieChart = () => {
 
     return (
         <div className="flex items-center justify-center">
-            <div className="p-4 w-1/2 shadow-lg rounded-lg bg-white dark:bg-zinc-800 dark:shadow-xl">
+            <div className="w-1/2 rounded-lg bg-white p-4 shadow-lg dark:bg-zinc-800 dark:shadow-xl">
                 <ApexChart options={options} series={series} type="pie" />
             </div>
         </div>

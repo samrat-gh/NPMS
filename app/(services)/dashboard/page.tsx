@@ -43,7 +43,7 @@ const categories = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
       </Breadcrumb>
 
     <div className="mx-auto mt-8">
-      <h1 className="text-3xl font-bold mb-4 dark:text-emerald-700">Investment Summary</h1>
+      <h1 className="mb-4 text-3xl font-bold dark:text-emerald-700">Investment Summary</h1>
 
       {/* <TopicGraph series={series} categories={categories} /> */}
       {/* <PieChart /> */}

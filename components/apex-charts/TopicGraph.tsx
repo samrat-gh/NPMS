@@ -52,7 +52,7 @@ const TopicGraph: React.FC<TopicGraphProps> = ({ series, categories }) => {
   // Render the ApexChart component with the provided options and series
   return (
     <div className="flex items-center justify-center">
-      <div className="p-4 w-9/12 shadow-lg rounded-lg bg-white">
+      <div className="w-9/12 rounded-lg bg-white p-4 shadow-lg">
         <ApexChart options={options} series={series} type="line" />
       </div>
     </div>
